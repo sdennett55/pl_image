@@ -59,4 +59,5 @@
 </code></pre>
 <p><code>enableDefaultSrcset</code> takes the provided image size and doubles it, creating a srcset with a 1x and 2x asset. If you need more flexibility than that, you can pass in <code>srcsetCommands</code> instead</p>
 <p>[example with srcsetCommands]</p>
+<p><a href="asdf">enter link description here</a></p>
 
