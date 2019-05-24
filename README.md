@@ -4,7 +4,7 @@
 ---
 
 <h2 id="responsive-images">Responsive Images</h2>
-<p>This is a referesher on responsive images in general, feel free to jump ahead to the next section on the image component.</p>
+<p>This is a refresher on responsive images in general, feel free to jump ahead to the next section on the image component.</p>
 <p>Before responsive design and retina displays, images were a one-size-fits-all solution.</p>
 <pre><code>&lt;img src="cat.jpg" width="100" height="100" /&gt;
 </code></pre>
