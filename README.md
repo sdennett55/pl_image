@@ -6,7 +6,7 @@
 <h2 id="responsive-images">Responsive Images</h2>
 <p>This is a refresher on responsive images in general, feel free to jump ahead to the next section on the image component.</p>
 <p>Before responsive design and retina displays, images were a one-size-fits-all solution.</p>
-<pre><code>&lt;img src="cat.jpg" width="100" height="100" /&gt;
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>cat.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
 </code></pre>
 <p>Today, requesting one image for every customer, on every display or breakpoint, is non-ideal for both performance and image quality. Therefore, responsive images are the answer and they are fundamentally dependent on two attributes: <code>scrset</code> and <code>sizes</code>.</p>
 <p>Responsive images use the power of <code>srcset</code> and <code>sizes</code> to hint to the browser which asset we’ve provided in our <code>srcset</code> to download, based on the user’s display resolution and the value of <code>sizes</code>.</p>
@@ -25,7 +25,7 @@
 <h2 id="the-image-component-pl_image">The Image Component (pl_image)</h2>
 <p>The image component provides a lot of features to create responsive images, including but not limited to: lazy loading, placeholders, space allocation, on-the-fly image crunching.</p>
 <p>By default, all we need to provide the component is a <code>width</code>, <code>height</code>, and <code>imageId</code>.</p>
-<pre class=" language-js"><code class="prism  language-js"><span class="token operator">&lt;</span>Image
+<pre class=" language-javascript"><code class="prism  language-javascript"><span class="token operator">&lt;</span>Image
   width<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">100</span><span class="token punctuation">}</span>
   height<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">100</span><span class="token punctuation">}</span>
   <span class="token comment">// IreID of our cat photo that we uploaded via Image Loader</span>
@@ -39,7 +39,7 @@
 </code></pre>
 <p>[Insert graphic that points out the different commands in the image URL]</p>
 <p>That’s not very responsive though, let’s make it responsive with <code>enableDefaultSrcset</code> and <code>sizes</code> and add a <code>name</code> for the image so that it isn’t <code>default_image</code>.</p>
-<pre class=" language-js"><code class="prism  language-js"><span class="token operator">&lt;</span>Image
+<pre class=" language-javascript"><code class="prism  language-javascript"><span class="token operator">&lt;</span>Image
   width<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">100</span><span class="token punctuation">}</span>
   height<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">100</span><span class="token punctuation">}</span>
   imageId<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">12345678</span><span class="token punctuation">}</span>
